@@ -160,14 +160,36 @@ footer {
 }
 
 .participants ul {
-  list-style: disc inside;
+  list-style: none; /* hide bullets */
   margin: 0;
-  padding-left: 16px;
+  padding-left: 0;
 }
 
 .participants li {
   padding: 4px 0;
   border-bottom: 1px dashed rgba(11, 58, 102, 0.06);
+}
+
+/* Delete/unregister button next to participant */
+.participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participants li button.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participants li button.delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .participants.no-participants {
