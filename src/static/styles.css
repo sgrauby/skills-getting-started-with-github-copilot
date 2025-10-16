@@ -142,3 +142,60 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+  padding: 10px;
+  background: linear-gradient(90deg, #ffffff, #f1f8ff);
+  border: 1px solid #e3f2fd;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #0b3a66;
+}
+
+.participants strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #0b3a66;
+}
+
+.participants ul {
+  list-style: none; /* hide bullets */
+  margin: 0;
+  padding-left: 0;
+}
+
+.participants li {
+  padding: 4px 0;
+  border-bottom: 1px dashed rgba(11, 58, 102, 0.06);
+}
+
+/* Delete/unregister button next to participant */
+.participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participants li button.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.participants li button.delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+.participants.no-participants {
+  color: #666;
+  font-style: italic;
+  padding: 8px;
+  border: 1px dashed #eee;
+  background: #fafafa;
+}
